@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box3, Title, Skill_Box, Skill_inventory, Hr } from './styled-Component'
+import { Box, Title, Skill_Box, Skill_inventory, Hr } from './styled-Component'
 
 const Skill = () => {
   return (
-    <Box3>
+    <Box background="#FFD460">
         <Title color='#1B262C'>Skill</Title>
         <Skill_inventory>
             <Skill_Box>Frontend</Skill_Box>
@@ -14,7 +14,7 @@ const Skill = () => {
             <Skill_Box>Deployment</Skill_Box>
             <Skill_Box>Certificate</Skill_Box>
         </Skill_inventory>
-    </Box3>
+    </Box>
   )
 }
 

@@ -1,24 +1,10 @@
 import styled, { keyframes } from 'styled-components';
+import { animation } from './styled-Component';
 
 
 export const Box = styled.div`
 width: 100%;
-height: 17rem;
-background: #3282B8;
-text-align: center;
-padding: 11rem 5rem 5rem 5rem;
-`;
-
-export const Box2 = styled.div`
-width: 100%;
-background: white;
-text-align: center;
-padding: 5rem;
-`;
-
-export const Box3 = styled.div`
-width: 100%;
-background: #FFD460;
+background: ${props => props.background || "#3282B8"};
 text-align: center;
 padding: 5rem;
 `;
@@ -45,9 +31,14 @@ width: 70%;
 margin-bottom: 2rem;
 `;
 
-export const animation = keyframes`
+export const more = keyframes`
 50% {
 transform: scale(1.1);
+}`;
+
+export const skill = keyframes`
+50% {
+    transform: translateY(-2rem);
 }`;
 
 export const More = styled.button`
@@ -61,7 +52,7 @@ margin: 0 auto;
 margin-top: 2.5rem;
 font-family: "DoHyeon";
 font-size: 1rem;
-animation: ${animation} 1s infinite;
+animation: ${more} 1s infinite;
 
 &:hover{
 animation: 0;
@@ -116,4 +107,11 @@ width: 20rem;
 font-family: "DoHyeon";
 font-size: 1.5rem;
 color: #1B262C;
+animation: ${skill} 1s ;
+`;
+
+export const Project_Box = styled.div`
+background-color: "#EEEEEE";
+border-radius: 1rem;
+
 `;

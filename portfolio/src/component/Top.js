@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Box, Title, Hr, Intro, More } from './styled-Component';
+import AboutMe from './AboutMe';
 
-
-const AboutMe = () => {
+const Top = () => {
   return (
     <>
     <Box>
@@ -19,4 +20,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe;
+export default Top;
