@@ -14,8 +14,9 @@ export const AboutMe = () => {
         {item: '주소지', info: '대구광역시'},
         {item: '연락처', info: '010-1234-5678'},
         {item: '이메일', info: 'chaheesun531@naver.com'},
-        {item: '학력', info: '계명대학교 컴퓨터공학과'},
+        {item: '학력', info: '계명대학교 컴퓨터공학과'}
     ];
+    
     const list = myInfo.map((myInfo) => (
         <Info_wrapper>
             <PersonIcon fontSize='large'

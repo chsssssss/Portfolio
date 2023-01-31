@@ -9,6 +9,16 @@ text-align: center;
 padding: 5rem;
 `;
 
+export const Nav = styled.div`
+width: 100%;
+background: #EEEEEE;
+position: fixed;
+`;
+
+export const Nav_logo = styled.div`
+
+`;
+
 
 export const Title = styled.div`
 font-family: "BlackHanSans";
@@ -113,5 +123,4 @@ animation: ${skill} 1s ;
 export const Project_Box = styled.div`
 background-color: "#EEEEEE";
 border-radius: 1rem;
-
 `;
